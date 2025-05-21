@@ -1,8 +1,8 @@
-##  Clone Repo and Open in code editor
+##  `Clone Repo and Open in code editor`
 
-##  npm i
+##  `npm i`
 
-Add your rapid API key to fetchPost function fetch req headers in useFetchPosts file. 
+Add your rapid API key to fetchPost function fetch req headers in useFetchPosts.js file. 
 
 ## `npm start`
 
