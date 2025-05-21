@@ -14,6 +14,7 @@ Assumptions made - searching by Author Name will search for the input as a word.
                  - reposted is not original.
 
 Components -> left side box | search and filter head | main box 
+
 hooks -> useFetchPost to handle loading, error and fetching of posts
 
 
