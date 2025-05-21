@@ -71,12 +71,12 @@ function Dashboard() {
         fetchPosts({searchKeyword: null});
     }, []);
 
-    useEffect(() => {
-        console.log(85);
-        if (posts.length > 0) {
-            console.log("Posts fetched successfully:", posts);
-        }
-    }, [posts]);
+    // useEffect(() => {
+    //     console.log(85);
+    //     if (posts.length > 0) {
+    //         console.log("Posts fetched successfully:", posts);
+    //     }
+    // }, [posts]);
 
     return (
         <>
