@@ -5,8 +5,9 @@ export default function LeftSideBox({
 }) {
 
     const getTopThreePostsByReaction = (posts) => {
-        return posts
-        .sort((a, b) => b.socialActivityCountsInsight.totalReactionCount - a.socialActivityCountsInsight.totalReactionCount)
+        const topThreePosts = posts.slice();
+
+        return topThreePosts.sort((a, b) => b.socialActivityCountsInsight.totalReactionCount - a.socialActivityCountsInsight.totalReactionCount)
         .slice(0, 3);
     };
 

@@ -14,7 +14,7 @@ function Dashboard() {
         searchAuthorName: ''
     });
 
-    const filterPosts = (posts) => {
+    const filterPosts = () => {
         let newPostsList = posts;
         if (activeFilters[filterConstants.ORIGINAL]) {
             newPostsList = newPostsList.filter(post => {
@@ -71,12 +71,12 @@ function Dashboard() {
         fetchPosts({searchKeyword: null});
     }, []);
 
-    // useEffect(() => {
-    //     console.log(85);
-    //     if (posts.length > 0) {
-    //         console.log("Posts fetched successfully:", posts);
-    //     }
-    // }, [posts]);
+    useEffect(() => {
+        console.log(85);
+        if (posts.length > 0) {
+            console.log("Posts fetched successfully:", posts);
+        }
+    }, [posts]);
 
     return (
         <>
@@ -104,7 +104,7 @@ function Dashboard() {
 
                             {/* Main Content */}
                             <MainBox 
-                                posts={filterPosts(posts)}
+                                posts={filterPosts()}
                             />
                         </>                    
                     }                    

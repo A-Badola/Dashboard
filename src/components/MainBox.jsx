@@ -27,7 +27,7 @@ export default function MainBox({
                             View
                         </a>
                         </div>
-                        <small className="text-muted">Posted on {new Date(post.postedDate).toLocaleDateString()}</small>
+                        <small className="text-muted">Posted on {new Date(post.postedDate).toLocaleString('en-IN')}</small>
                         
                         {/* Post Body */}
                         <p>
