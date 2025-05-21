@@ -56,7 +56,7 @@ export default function MainBox({
                         <div className="d-flex gap-3 mt-3 text-muted" style={{ fontSize: '0.7rem' }}>
                             <div>👍 {post.socialActivityCountsInsight?.likeCount ?? 0} Likes</div>
                             <div>💬 {post.socialActivityCountsInsight?.numComments ?? 0} Comments</div>
-                            <div>🟢 {post.socialActivityCountsInsight?.numComments ?? 0} reactions </div>
+                            <div>🟢 {post.socialActivityCountsInsight?.totalReactionCount ?? 0} reactions </div>
                         </div>
                         </div>
                     </div>
