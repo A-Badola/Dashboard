@@ -16,7 +16,7 @@ export default function LeftSideBox({
             <aside className="col-md-4 mb-4">
                 <div className="card">
                     <div className="card-body">
-                    <h5 className="card-title">Recent Posts</h5>
+                    <h5 className="card-title">Most Engaged Posts</h5>
                     <ul className="list-unstyled">
                         {topThreePosts.map(post => (
                         <li key={post.urn} className="mb-3">
